@@ -1,0 +1,23 @@
+{
+  "name": "profile-card-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w styles.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciaibanez/profile-card-component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marciaibanez/profile-card-component/issues"
+  },
+  "homepage": "https://github.com/marciaibanez/profile-card-component#readme",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}

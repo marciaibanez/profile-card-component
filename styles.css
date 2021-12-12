@@ -1,0 +1,138 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --gray: hsl(0, 0%, 59%);
+}
+
+html,
+body {
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: var(--dark-cyan);
+}
+
+main {
+  position: relative;
+}
+
+.background-top,
+.background-bottom {
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+}
+@media (min-width: 769px) {
+  .background-top,
+.background-bottom {
+    max-width: none;
+  }
+}
+
+.background-top {
+  top: -40%;
+  left: -60%;
+}
+@media (min-width: 769px) {
+  .background-top {
+    top: -130%;
+    left: -190%;
+  }
+}
+
+.background-bottom {
+  bottom: -40%;
+  right: -52%;
+}
+@media (min-width: 769px) {
+  .background-bottom {
+    bottom: -155%;
+    right: -175%;
+  }
+}
+
+.profile-card {
+  max-width: 350px;
+  background-image: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 15px;
+  margin: 2rem;
+  color: var(--dark-blue);
+  box-shadow: 0px 5px 40px var(--grayish-blue);
+}
+.profile-card__image {
+  padding-top: 5.5rem;
+}
+.profile-card__image img {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 60px;
+  border: 5px solid white;
+}
+.profile-card__details {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.profile-card__details::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--gray);
+  opacity: 20%;
+  display: block;
+  margin: 1.5rem 0;
+}
+.profile-card__name, .profile-card__age {
+  font-size: 1.4rem;
+}
+.profile-card__age, .profile-card__country, .profile-card__stats span {
+  color: var(--grayish-blue);
+}
+.profile-card__country {
+  margin: 10px;
+  font-size: 1rem;
+}
+.profile-card__stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0 1rem 1.5rem;
+}
+.profile-card__stats p {
+  font-weight: 700;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  margin: 0;
+}
+.profile-card__stats span {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  text-align: center;
+  color: white;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  margin: 0 1.5rem;
+}
+@media (min-width: 769px) {
+  .attribution {
+    margin: 0;
+  }
+}
+
+.attribution a {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=styles.css.map */
